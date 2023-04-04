@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 700 !important;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #23242a;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700 !important;
+  }
+  body > .box {
+    position: relative;
+    height: 420px;
+    width: 380px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    font-weight: 700 !important;
+  }
+  body > .box::before {
+    content: " ";
+    position: absolute;
+    height: 420px;
+    width: 380px;
+    background: linear-gradient(0deg, transparent, #f400e8, #45f3ff, #45f3ff);
+    top: -50%;
+    left: -50%;
+    transform-origin: bottom right;
+    -webkit-animation: animate 6s linear infinite;
+            animation: animate 6s linear infinite;
+            font-size: 700 !important;
+  }
+  body > .box::after {
+    content: " ";
+    position: absolute;
+    height: 420px;
+    width: 380px;
+    background: linear-gradient(0deg, transparent, #f400e8, #45f3ff, #45f3ff);
+    top: -50%;
+    left: -50%;
+    transform-origin: bottom right;
+    -webkit-animation: animate 6s linear infinite;
+            animation: animate 6s linear infinite;
+    -webkit-animation-delay: -3s;
+            animation-delay: -3s;
+            font-size: 700 !important;
+  }
+  @-webkit-keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  body > .box .form {
+    padding: 50px 40px;
+    position: absolute;
+    inset: 2px;
+    background-color: #28292d;
+    z-index: 10;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    font-size: 700 !important;
+  }
+  body > .box .form > h2 {
+    color: #45f3ff;
+    text-align: center;
+    font-size: 700 !important;
+    letter-spacing: 0.1rem;
+  }
+  body > .box .form > .inputBox {
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+    font-size: 700 !important;
+  }
+  body > .box .form > .inputBox > input {
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #f400e8;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    z-index: 10;
+    font-size: 700 !important;
+  }
+  body > .box .form > .inputBox > span {
+    position: absolute;
+    left: 0;
+    padding: 20px 10px 10px;
+    font-size: 1em;
+    color: #8f8f8f;
+    pointer-events: none;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    font-size: 700 !important;
+  }
+  body > .box .form > .inputBox > i {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #f400e8;
+    border-radius: 4px;
+    transition: 0.5s;
+    pointer-events: none;
+    z-index: 9;
+    font-weight: 700 !important;
+  }
+  body > .box .form > .links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 700 !important;
+  }
+  body > .box .form > .links > a {
+    margin: 10px;
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+    font-weight: 700 !important;
+  }
+  body .inputBox input:valid ~ span,
+  body .inputBox input:focus ~ span {
+    transform: translateX(-10px) translateY(-34px);
+    font-size: 0.75em !important;
+    font-weight: 700 !important;
+  }
+  body .inputBox input:valid ~ i,
+  body .inputBox input:focus ~ i {
+    height: 44px !important;
+    background: #45f3ff !important;
+  }
+  body .links a:hover, body :nth-child(2) {
+    color: #45f3ff !important;
+  }
+  body input[type=submit] {
+    border: none;
+    outline: none;
+    background: #45f3ff !important;
+    padding: 11px 25px;
+    width: 100px;
+    margin-top: 10px;
+    border-radius: 4px;
+    font-weight: 700 !important;
+    cursor: pointer;
+  }
+  body input[type=submit]:active {
+    opacity: 0.5;
+  }
