@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.tlo{
+    background-color: #5C605C;
+  }
+section{
+    height: 100vh;
+
+    background-color: #5C605C;
+    font-family: sans-serif;
+    margin: 0 auto;
+  }
+.wynik {
+    color: #ffffff;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+.wynik h2 {
+    font-size: 25px;
+ }
+.wynik p {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+}
+  
+.intro {
+    color: #ffffff;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity 0.5s ease;
+}
+  
+.intro h1 {
+    font-size: 30px;
+}
+.intro img{
+      width: 146px;
+      height: 119px;
+}
+
+.intro button, .match button {
+  width: 150px;
+  height: 50px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+  background: #0DC00D;
+  border-radius: 3px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.match {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease 0.3s;
+}
+.winner {
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px
+
+}
+
+.hands, .options {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 35px;
+}
+.computer-hand {
+  transform: rotateY(180deg);
+}
+.rock, .paper, .scissors{
+  margin: 35px 15px;
+}
+
+div.fadeOut {
+  opacity: 0;
+  pointer-events: none;
+}
+
+div.fadeIn {
+  opacity: 1;
+  pointer-events: all;
+}
+footer{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+.hands img{
+  width: 70px;
+  height: 70px;
+}
+
+@keyframes shakePlayer {
+  0% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  15% {
+    transform: rotateY(180deg) translateY(-50px);
+  }
+  25% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  35% {
+    transform: rotateY(180deg) translateY(-50px);
+  }
+  50% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  65% {
+    transform: rotateY(180deg) translateY(-50px);
+  }
+  75% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+  85% {
+    transform: rotateY(180deg) translateY(-50px);
+  }
+  100% {
+    transform: rotateY(180deg) translateY(0px);
+  }
+}
+
+@keyframes shakeComputer {
+  0% {
+    transform: translateY(0px);
+  }
+  15% {
+    transform: translateY(-50px);
+  }
+  25% {
+    transform: translateY(0px);
+  }
+  35% {
+    transform: translateY(-50px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  65% {
+    transform: translateY(-50px);
+  }
+  75% {
+    transform: translateY(0px);
+  }
+  85% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 740px) {
+  section{
+    width: 370px;
+  }
+  .options{
+    flex-direction: column;
+  }
+  .rock, .paper, .scissors{
+    margin: 15px 0;
+  }
+  .hands img{
+    margin: 0 10px;
+  }
+  .wynik{
+    height: 15vh;
+  }
+  .winner{
+    font-size: 25px
+  }
+  .wynik h2{
+    font-size: 20px
+  }
+  .wynik p{
+    font-size: 15px
+  }
+}
