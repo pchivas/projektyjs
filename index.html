@@ -1,52 +1,548 @@
 <!DOCTYPE html>
-<html lang="pl">
-
-<head>
+<html lang="pl" prefix="og: http://ogp.me/ns#">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kamień Papier Nożyce The Game</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Tru Design</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="stylesheet" type="text/css" href="normalize.min.css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="flexboxgrid.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="theme.css" media="all" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
-
 <body>
-    <div class="tlo">
-        <section class="gra">
-            <div class="wynik">
-                <div class="gracz-wynik">
-                    <h2>Gracz</h2>
-                    <p>0</p>
-                </div>
-                <div class="komputer-wynik">
-                    <h2>Komputer</h2>
-                    <p>0</p>
-                </div>
-            </div>
-
-            <div class="intro">
-                <h1>Kamień Papier Nożyce The Game</h1>
-                <img src="img/rock paper scissors.png" alt="">
-                <button>Zagraj</button>
-            </div>
-            
-
-            <div class="match fadeOut">
-                <h2 class="wygrany">Wybierz Opcje</h2>
-                <div class="hands">
-                    <img class="player-hand" src="img/rock.png" alt="" />
-                    <img class="computer-hand" src="img/rock.png" alt="" />
-                </div>
-                <div class="options">
-                    <button class="rock">Kamień</button>
-                    <button class="paper">Papier</button>
-                    <button class="scissors">Nożyce</button>
-                </div>
-            </div>
-
-            
-        </section>
+    <header class="fade-in">
+        <div class="navigation-bar flex middle-xs">
+           <img src="logos.jpg" class="logo"></a>
+            <nav id="navbar">
+                <ul>
+                    <br>
+                    <li><a href="#Start">Start</a></li>
+                    <li><a href="#Usługi">Usługi</a></li>
+                    <li><a href="#Mapa">Mapa</a></li>
+                    <li><a href="#Korzyści">Korzyści</a></li>
+                    <li><a href="#Kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+            <div id="topq"></div>
+        </div>
+        <div class="hero flex middle-xs" style="background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7));">
+    <div class="hero-text">
+        <h1 class="trud">TruDesign</h1>
+      
     </div>
+</div>
+</header>
+<div class="wrapper">
+    <main>
+        <section class="intro" id="about-us">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <h2 class="section-title">Kilka Słow O Nas</h2>
+                    </div>
+                </div>
+                <div class="row margin-bottom ">
+                    <div class="col-md">
+                        <p class="highlight">Firma TruDesign działa na rynku od 2022. Świadczy kompleksowe usługi produkcji trumien z najwyższej jakości drewna. Firma współpracuje z wybitnymi, doświadczonymi stolarzami, którzy tworzą z najlepszych materiałów produkty najwyższej jakości.</p>
+                    </div>
+                    <div class="col-md">
+                        <p> Trumny są starannie zaprojektowane i wykończone, aby zapewnić rodzinom i bliskim osoby zmarłej odpowiedni szacunek i godny pochówek.</p>
+                    </div>
+                    <div class="col-md">
+                        <p> Firma oferuje również szeroki wybór trumien i akcesoriów pogrzebowych, aby spełnić oczekiwania swoich klientów. TruDesign to profesjonalny partner, który zapewnia usługi najwyższej jakości w optymalnych cenach.</p>
+                    </div>
+                </div>
+                <div class="row team center-xs">
+                    <div class="col-md">
+                        <div class="hover-outer-box">
+                            <img src="fbic.png">
+                            <div class="hover-inner-box">
+                                <div class="hover-content">
+                                    <h3>Nasza Strona Facebook</h3>
+                                    <button class="redirect-buttonFB">Zobacz Naszego Facebooka</button>
+                                    <p>Tru-Design_płock</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="hover-outer-box">
+                            <img src="twic.png">
+                            <div class="hover-inner-box">
+                                <div class="hover-content">
+                                    <h3>Nasza Strona Twitter</h3>
+                                    <button class="redirect-buttonTW">Zobacz Naszego Twittera</button>
+                                    <p>@TruDesign_Plock</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md">
+                        <div class="hover-outer-box">
+                            <img src="igic.png">
+                            <div class="hover-inner-box">
+                                <div class="hover-content">
+                                    <h3>Nasza Strona Instagram</h3>
+                                    <button class="redirect-button">Zobacz Naszego Instagrama</button>
+                                    <p>@Tru-Design_Plock</p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr/>
+        <section class="services" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 center-xs">
+                        <h2 class="section-title">Nasze Usługi</h2>
+                    </div>
+                </div>
+                <div class="row icon-row">
+                    <div class="col-xs center-xs">
+                        <img src="001-achievement.svg" class="icon"><br/>
+                        Produkcja trumien i innych produktów pogrzebowych.
+                    </div>
+                    <div class="col-xs center-xs">
+                        <img src="002-pencil.svg" class="icon"><br/>
+                        Personalizacja trumien w oparciu o wymagania klienta.
+                    </div>
+                    <div class="col-xs center-xs">
+                        <img src="003-idea.svg" class="icon"><br/>
+                        Wysyłka trumien i innych produktów pogrzebowych.
+                    </div>
+                </div>
+                 <div class="row icon-row">
+                    <div class="col-xs center-xs">
+                        <img src="004-shopping-bag.svg" class="icon"><br/>
+                        Przechowywanie trumien i innych produktów pogrzebowych.
+                    </div>
+                    <div class="col-xs center-xs">
+                        <img src="005-fountain-pen.svg" class="icon"><br/>
+                        Sprzedaż akcesorii pogrzebowych.
+                    </div>
+                </div>
+                <div class="row margin-bottom ">
+                    <div class="col-md">
 
-    <script src="javaS.js"></script>
-</body>
+                        <p class="author"></p>
+                    </div>
+                    <div class="col-md">
+                       
+                    </div>
+                    <div class="col-md">
+                      
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cta middle-xs">
+            <div class="container">
+                <div class="row middle-md">
+                    <div class="col-md-8">
+                        <h2></h2>
+                        <p>Oferujemy Najszybszą Dostawę Trumien, Wybierz || Spersonalizuj, A My Dostarczymy Ją do Ciebie w Ciągu 2-4 Dni Roboczych.</p>
+                        <a href="zamowienia.html"><button class="light">Zacznij Teraz!</button></a>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="cta-display.png" class="display">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <div class="padding-small">
+                <div class="row margin-bottom-small">
+                    <div class="col-md-4">
+                        <div class="hover-outer-box">
+                            <img src="Twiklina.png" class="zdjw">
+                            <div class="hover-inner-boxw">
+                                <div class="hover-content">
+                                    <h3>Trumna z Wikliny</h3>
+                                    <p>Trumny wiklinowe przeznaczone są do coraz popularniejszych zielonych pogrzebów. Ich rozkład jest znacznie szybszy od drewnianych trumien. Nie posiadają elementów metalowych, dlatego mogą być spalane w piecach krematoryjnych.</p>
+                                    <a href="zamowienia.html"><button class="light1">Pokaż Oferty</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="hover-outer-box">
+                            <img src="Tiglo.png" class="zdji">
+                            <div class="hover-inner-boxi">
+                                <div class="hover-content">
+                                    <h3>Trumna Iglo</h3>
+                                    <p>Trumna Iglo to trumna z wysokim wiekiem, obniżającym się ku dołowi. Proponujemy ją w różnych wersjach kolorystycznych.</p>
+                                    <a href="zamowienia.html"><button class="light2">Pokaż Oferty</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="hover-outer-box">
+                            <img src="Tlamana.jpg" class="zdjl">>
+                            <div class="hover-inner-boxl">
+                                <div class="hover-content">
+                                    <h3>Trumna Łamana</h3>
+                                    <p>Trumna Łamana odznacza się kształtem zwężanym do dołu na wysokości ramion lub też stóp zmarłego, a także charakterystycznymi załamaniami, widocznymi tak na wieku trumny, jak i na korpusie.
+                                    </p>
+                                    <a href="zamowienia.html"><button class="light3">Pokaż Oferty</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row margin-bottom-small">
+                    <div class="col-md-4">
+                        <div class="hover-outer-box">
+                            <img src="Tsamolot.jpg" class="zdjt">
+                            <div class="hover-inner-boxsa">
+                                <div class="hover-content">
+                                    <h3>Trumna Samolot</h3>
+                                    <p>Trumna Samolot występuje w kilku wersjach – z wybiciem ukrytym we wnętrzu trumny, jak też z kapą z koroną widoczną na styku wieka z korpusem trumny. W naszej ofercie znajduje się także trumna Samolot podwyższana.
+                                    </p>
+                                    <a href="zamowienia.html"><button class="light4">Pokaż Oferty</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="hover-outer-box">
+                            <img src="Tszostka.jpg" class="zdjt">
+                            <div class="hover-inner-boxs">
+                                <div class="hover-content">
+                                    <h3>Trumna Szóstka</h3>
+                                    <p>Trumna Szóstka odznacza się kształtem prostopadłościanu o sześciu wyraźnie zaznaczonych krawędziach. Produkowana jest zarówno w wersji błyszczącej, jak i matowej.</p>
+                                    <a href="zamowienia.html"><button class="light5">Pokaż Oferty</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="hover-outer-box">
+                            <img src="Tameryk.jpg"class="zdjta">
+                            <div class="hover-inner-boxa">
+                                <div class="hover-content">
+                                    <h3>Trumna Amerykańska</h3>
+                                    <p>Trumna Amerykańska posiada podwyższone wieko, a także charakterystyczne rzeźbione kolumny w podstawie oraz antaby rurowe umieszczone wzdłuż boków trumny. Trumny amerykańskie produkujemy w wersji Baron oraz Standard.</p>
+                                    <a href="zamowienia.html"><button class="light6">Pokaż Oferty</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="cta">
+                <div class="container">
+                    <div class="row center-xs">
+                        <div class="col-md">
+                            <h2>Misja Naszej Firmy.</h2>
+                            <p>Misją naszej firmy zajmującej się produkcją wysoko jakościowych, rzemielśniczych trumien jest dostarczanie klientom najwyższej jakości produktów w rozsądnych cenach, które będą służyć im w wyrazie szacunku wobec ich bliskich. Chcemy, aby firmy, które miały do czynienia z naszymi trumniami, zauważyły naszą pasję i zaangażowanie w tworzenie wyjątkowych produktów, które zapewnią komfort i wsparcie w tym trudnym czasie. Chcemy, aby nasze trumny znane były z ich jakości, trwałości i piękna, oraz aby klienci postrzegali je jako oznakę szacunku i uznania dla ich bliskich.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="blurbs" id="benefits">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md center-xs">
+                            <h2 class="section-title">Korzyści</h2>
+                        </div>
+                    </div>
+                    <div class="row margin-bottom-small center-xs">
+                        <div class="col-md">
+                            <img src="001-achievement.svg" class="icon ">
+                            <h3>Wysoka jakość </h3>
+                            <p>Wysoka jakość produktów: Nasze trumny są wykonane z najwyższej jakości drewna, co zapewnia trwałość i elegancki wygląd.</p>
+                        </div>
+                        <div class="col-md">
+                            <img src="002-pencil.svg" class="icon">
+                            <h3>Szeroki wybór</h3>
+                            <p>Szeroki wybór: Oferujemy szeroki wybór trumien i innych produktów związanych z pogrzebami, takich jak urny, krzyże i tabliczki pamiątkowe, aby spełnić różne potrzeby i preferencje klientów.</p>
+                        </div>
+                        <div class="col-md">
+                            <img src="003-idea.svg" class="icon">
+                            <h3>Elastyczne opcje dostawy</h3>
+                            <p>Elastyczne opcje dostawy: Możemy dostarczyć produkty bezpośrednio do domu klienta lub do zakładu pogrzebowego.</p>
+                        </div>
+                    </div>
+                    <div class="row center-xs">
+                        <div class="col-md">
+                            <img src="004-shopping-bag.svg" class="icon">
+                            <h3>Usługi personalizacji</h3>
+                            <p>Usługi personalizacji: Ofertujemy usługi personalizacji produktów, takie jak grawerowanie, aby pomóc klientom wyrazić swoje uczucia i wspomnienia.</p>
+                        </div>
+                        <div class="col-md">
+                            <img src="005-fountain-pen.svg" class="icon">
+                            <h3>Profesjonalne doradztwo</h3>
+                            <p>Profesjonalne doradztwo: Nasz zespół specjalistów jest gotów udzielić doradztwa i pomocy w zakresie wyboru odpowiedniego produktu i usług.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="newsletter">
+                <div class="container">
+                  <div class="row center-xs">
+                    <div class="col-md ">
+                      <h2>Czy Chcesz Aby Powiadamiać Cie o Naszych Nowościach?</h2>
+                      <form onsubmit="submitForm(event)" class="flex center-xs">
+                        <input placeholder="Twój Email" type="email" required="yes" name="email" class="margin-bottom-small">
+                        <button>Wyślij</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            <section class="contact" id="contact">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md center-xs">
+                            <h2 class="section-title">Kontakt</h2>
+                        </div>
+                    </div>
+                    <div class="row margin-bottom-small center-xs">
+                        <div class="col-md">Zadzwoń Do Nas<br/>797 465 355</div>
+                        <div class="col-md">Nasz Adres<br/>Płock ul. Dobrzyńska 13 09-400.</div>
+                        <div class="col-md">Email<br/>trudesingne@gmail.com</div>
+                    </div>
+                    <form id="myForm" onsubmit="submitForm(event)">
+                        <div class="row margin-bottom-small center-xs">
+                          <div class="col-md padding-small">
+                            <div class="row">
+                              <div class="col-md">
+                                <input placeholder="Podaj Swoją Nazwę" type="text" name="name" value="" class="margin-bottom-small" required>
+                                <input placeholder="Podaj Swój Email" type="email" name="email"  value="">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md padding-small">
+                            <textarea placeholder="Co chcesz nam przekazać?" name="message" rows="8" class="margin-bottom-small" required></textarea>
+                            <input type="submit" value="Wyślij">
+                          </div>
+                        </div>
+                        <div id="error" style="display:none;"></div>
+                      </form>
+                      <style>
+                        #error {
+                            color: rgb(255, 255, 255);
+                            background-color: #000000;
+                            font-size: 1.2em;
+                            padding: 0.5em;
+                            border: 2px solid rgb(0, 0, 0);
+                            border-radius: 20px;
+                            text-align: center;
+                            margin-top: 10px;
+                            animation: shake 0.72s cubic-bezier(.36,.07,.19,.97) both;
+                        }
+                        @keyframes shake {
+                          10%, 90% {
+                            transform: translate3d(-1px, 0, 0);
+                          }
+                        
+                          20%, 80% {
+                            transform: translate3d(2px, 0, 0);
+                          }
+                        
+                          30%, 50%, 70% {
+                            transform: translate3d(-4px, 0, 0);
+                          }
+                        
+                          40%, 60% {
+                            transform: translate3d(4px, 0, 0);
+                          }
+                        }
+                    </style>
+                      
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md center-xs">
+                    <img src="" class="margin-bottom" style="max-width: 150px;">
+                </div>
+            </div>
+            <div class="row margin-bottom-small">
+                <div class="col-md-8">
+                    <p id="siedt">Siedziba Naszej Firmy.</p>
+                    <div id="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2425.8280876268427!2d19.667835015776692!3d52.55463447982082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471c7a68b49625b9%3A0x43218cc9f3e8090b!2sDobrzy%C5%84ska%2013%2C%2009-400%20P%C5%82ock!5e0!3m2!1spl!2spl!4v1674675593691!5m2!1spl!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                    </div>
+            </div>
+        </div>
+    </footer>
+    
 
-</html>
+      
+        <div class="ftr">
+         <p class="cpz">© 2023 Tru Designe, Inc. Tru-Designe, oraz wszelkie powiązane logo są znakami towarowymi, znakami usługowymi i/lub zarejestrowanymi znakami towarowymi Tru-Designe, Inc.
+         <p class="cpz">Prawa autorskie dotyczące tej strony internetowej należą do TruDesign.Inc, z siedzibą w Płock,Polska. Wszystkie treści zamieszczone na tej stronie, w tym teksty, zdjęcia, filmy, logo oraz inne materiały, są objęte prawami autorskimi i nie mogą być kopiowane, rozpowszechniane ani wykorzystywane bez pisemnej zgody TruDesign.Inc.
+           <br>  <br>
+
+            Jednocześnie informujemy, że wszelkie naruszenie praw autorskich będzie skutkowało podjęciem odpowiednich działań prawnych.</p></p>                
+     </div>
+ </div>
+ <script src="https://cdn.polyfill.io/v2/polyfill.min.js?callback=polyfillsAreLoaded" defer></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <script src="script.js" defer></script>
+ <script>
+    $(document).ready(function(){
+        $("a[href='#Start']").click(function() {
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+            return false;
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("a[href='#Usługi']").click(function() {
+            $("html, body").animate({ scrollTop: 1780 }, "slow");
+            return false;
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("a[href='#Mapa']").click(function() {
+            $("html, body").animate({ scrollTop: 6500 }, "slow");
+            return false;
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("a[href='#Korzyści']").click(function() {
+            $("html, body").animate({ scrollTop: 4700 }, "slow");
+            return false;
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $("a[href='#Kontakt']").click(function() {
+            $("html, body").animate({ scrollTop: 5700 }, "slow");
+            return false;
+        });
+    });
+</script>
+<script>
+    function submitForm(event) {
+        event.preventDefault();
+        var form = document.getElementById("myForm");
+        form.elements.name.classList.add("hide");
+        form.elements.email.classList.add("hide");
+        form.elements.message.classList.add("hide");
+        setTimeout(function(){
+            clearForm();
+        }, 500);
+    }
+    function clearForm() {
+        var form = document.getElementById("myForm");
+        form.elements.name.value = "";
+        form.elements.email.value = "";
+        form.elements.message.value = "";
+        form.elements.name.classList.remove("hide");
+        form.elements.email.classList.remove("hide");
+        form.elements.message.classList.remove("hide");
+    }
+</script>
+<script>
+    function submitForm(event) {
+      event.preventDefault();
+      var form = event.target;
+      form.elements.email.classList.add("hide");
+      setTimeout(function(){
+          clearForm();
+      }, 500);
+    }
+    function clearForm() {
+      var form = document.getElementsByTagName("form")[0];
+      form.elements.email.value = "";
+      form.elements.email.classList.remove("hide");
+    }
+  </script>
+  <script>
+    function submitForm(event) {
+        event.preventDefault();
+        var form = event.target;
+        var email = form.elements.email.value;
+        var error = document.getElementById("error");
+        if(email == "") {
+            error.style.display = "block";
+            error.innerHTML = "Prosze Wprowadz Swój Email";
+        } else {
+            error.style.display = "none";
+      
+        }
+    }
+</script>
+<script>
+    var redirectButton = document.querySelector(".redirect-button");
+    redirectButton.addEventListener("click", function(){
+        window.open("https://www.instagram.com/trudesingne_plock/", "_blank");
+    });
+</script>
+<script>
+    document.getElementById("redirectButton").addEventListener("click", function() {
+      this.style.transform = "scale(0.8)";
+    });
+  </script>
+  <script>
+    var redirectButton = document.querySelector(".redirect-buttonFB");
+    redirectButton.addEventListener("click", function(){
+        window.open("https://www.facebook.com/profile.php?id=100089672055037", "_blank");
+    });
+</script>
+<script>
+    var redirectButton = document.querySelector(".redirect-buttonTW");
+    redirectButton.addEventListener("click", function(){
+        window.open("https://twitter.com/TruDesignPlock?fbclid=IwAR0uiWiPMuy5TXW2bSI0SUfZHf4odODlza3djKBRJ4XC7dcH6oLjuL9SYbw", "_blank");
+    });
+</script>
+<script>
+$( document ).ready(function() {
+
+    
+    $(function(){
+    	var windowH = $(window).height();
+    	var wrapperH = $('.hero').height();
+    	if(windowH > wrapperH) {                            
+    		$('.hero').css({'height':($(window).height())+'px'});
+    	}                                                                               
+    	$(window).resize(function(){
+    		var windowH = $(window).height();
+    		var wrapperH = $('.hero').height();
+    		var differenceH = windowH - wrapperH;
+    		var newH = wrapperH + differenceH;
+    		var truecontentH = $('#truecontent').height();
+    		if(windowH > truecontentH) {
+    			$('.hero').css('height', (newH)+'px');
+    		}
+
+    	})          
+    });
+
+
+});
+</script>
+<script>
+window.onscroll = function() {myFunction()};
+
+$(document).ready(function(){
+  $("#Start").on("click", function(event){
+    event.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+    return false;
+  });
+});
+</script>
+
+
