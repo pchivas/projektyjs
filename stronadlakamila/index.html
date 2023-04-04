@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kacper Saganowski">
+    <meta name="keywords" content="TRUMNY,POGRZEB">
+    <meta name="description" content="STRONA O FIRMIE PRODUKUJĄCEJ TRUMNY">
+    <link rel="stylesheet" href="style.css">
+    <title>TRUMNY NA ZAMÓWIENIE</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+
+<div id="all">
+<div id ="conteiner">
+    <div id="LOGOS">
+        <img src="zdjkam.jpg"  id="logok"
+        alt="logotyp FIRMY"
+        width="50" height="50">
+    </div>
+
+    
+    <div id="container">
+
+      <nav>
+        <div id="logo">
+          Company
+        </div>
+        <ul>
+          <li><a href="#">Start</a></li>
+          <li><a href="#">Usługi</a></li>
+          <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="#">Gallery &nbsp;<i class="fa fa-caret-down"></i></a>
+            <div class="dd">
+              <div id="up_arrow"></div>
+            <ul>
+              
+              <li><a href="#">2019</a></li>
+              <li><a href="#">2018</a></li>
+              <li><a href="#">2017</a></li>
+            </ul>
+            </div>
+          </li>
+          <li><a href="#">Mapa</a></li>
+          <li class="dropdown"><a href="#">Contact &nbsp;<i class="fa fa-caret-down"></i> </a>
+           <div class="dd">
+             <div id="u_a_c"><div id="up_arrow"></div></div>
+            <ul>
+              
+              <li><a href="#">DOCS</a></li>
+              <li><a href="#">API</a></li>
+              <li><a href="#">PROJECTS</a></li>
+            </ul>
+            </div>
+        </ul>
+      </nav>
+    </div>
+    </div>
+    </div>
+
+    <hr/>
+    <div id="content">
+    <br>
+    <a href="https://www.google.com/search?q=trumny&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjaoIXwlPz7AhVymIsKHRxcAJwQ_AUoAXoECAEQAw&biw=1066&bih=813&dpr=1&safe=active&ssui=on%22_blank%22%3E"></a>Odnośnik do grafiki przykładowej trumny</a>
+    <p>Aplikacja umożliwia:</p>
+
+        <p>wyszukanie trumny</p>
+        <p>kupno trumny</p>
+        <p>zamówienie usługi</p>
+<hr/>
+    <h2>WYSZUKIWARKA TRUMIEN</h2>
+    <form action='dodaj_drzewo.php' method="POST">
+        Gatunek:
+        <input type="text" name="gatunek" maxlength="50">
+        Rodzaj:
+        <select name="rodzaj">
+            <option>JASNE KOLORY</option>
+            <option>CIEMNE KOLORY/option>
+        </select>
+        <input type="submit" value="Zapisz">
+    </form>
+        <h3>dodaj filtr  </h3>
+    <form action='dodaj_ulice.php' method="POST">
+        Miejscowość:
+        <input type="text" name="ulica" maxlength="50">
+        <input type="submit" value="Zapisz">
+    </form>
+        <hr/>
+        <h2>Wyświetlanie</h2>
+        <h3>WYŚWIETL ULUBIONE TRUMNY </h3>
+    <form action='wyswietl.php' method="POST">
+        Wybierz co chcesz wyswietlić: 
+        <select name="lista">
+            <option>ROZMIAR</option>
+            <option>CENA</option>
+            <option>DRZEWO</option>
+        </select>
+        <input type="submit" value="Wyswietl">
+    </form>
+
+    </div>
+    <div id ="footer">
+    Wszelkie prawa zastrzeżone dla Kacper Saganowski Copyright© 2022
+    </div>
+</div>
+</div>
+</body>
+</html>
+<head> 
+    <html lang = "pl">
+    <meta charset ="UTF-8">
+    <title> ZAKLADKI </title>
+</head>
+<body>
+<div id="conteiner">
+    <div id="logo">
+        <h1>firma produkująca trumny</h1>
+    </div>
+    <div id="menu"v>
+        <ul>
+            <li><a href="index.html">Strona główna</a>
+            <li>O nas
+            <li>Oferta
+            <li>Galeria
+            <li><a href="kontakt.html">Kontakt</a>
+        </ul>
+    </div>    
+    <p>Aplikacja umożliwia</p>
+    <ul>
+        <li>kupno trumny
+        <li>personalizacje trumny
+    </ul>
+    <hr/>
+    <h2>Dodawanie</h2>
+    <form action='dodaj_drzewo.php' method="POST">
+        
+        <input type="text" name="gatunek" maxlength="50"/>
+        
+        <select name="rodzaj">
+            <option>drewno</option>
+            <option>rozmiar</option>
+        </select>
+        <input type="submit" value="Zapisz"/>
+    </form>
+    <h3>Dodaj ulice</h3>
+    <form action='dodaj_ulice.php' method="POST">
+        miejscowość:
+        <input type="text" name="cena" maxlength="50"/>
+        <input type="submit" value="Zapisz"/>
+    </form>
+    <hr/>
+    
+    <h2>Wyświetlenie</h2>
+    <h3>WYŚWIETL TRUMNE </h3>
+    <form action="wyswietl.php" method="POST">
+    Wybierz co chcesz wyświetlić:
+        <select name="lista">
+            <option>KOSZYK</option>
+            <option>ULUBIONE</option>
+        </select>
+    <input type="submit" value="Wyświetl"/>
+    </form>
+<div>
+</body>
+
+<footer>
+
+</footer>

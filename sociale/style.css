@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: purple;
+  }
+  body ul {
+    list-style: none;
+    display: flex;
+  }
+  body ul li {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+    border: 2px solid #000;
+  }
+  body ul li:hover {
+    background-color: orange;
+    border: 5px double #fff;
+    box-shadow: 0 0 20px #fff;
+  }
+  body ul li:hover > a {
+    color: #000;
+  }
+  body ul li a {
+    color: lightcoral;
+  }
+  body .intro {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }/*# sourceMappingURL=style.css.map */
