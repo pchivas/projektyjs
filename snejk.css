@@ -1,0 +1,31 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+body {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+canvas {
+    border: 1px solid white;
+}
+#score {
+    color: #fff;
+    font-size: 60px;
+    text-shadow: 0 0 5px;
+    position: absolute;
+    top: 3%;
+    left: 43%;
+}
+#rekord {
+    font-size: 33px;
+    text-shadow: 0 0 5px;
+    position: absolute;
+    top: 15%;
+    left: 46%;
+}
+#counter {
+    font-size: 30px;
+}
